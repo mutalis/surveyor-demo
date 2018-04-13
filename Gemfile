@@ -43,7 +43,6 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'surveyor', git: 'https://github.com/HeHStudy/surveyor', branch: 'rails-5-multitenant'
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+gem 'pg', group: :production
+
+gem 'rails_12factor', group: :production
